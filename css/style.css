@@ -1,0 +1,405 @@
+/*
+font-family: "Bitter", serif;
+font-family: "Playfair Display", serif;
+ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+.header{
+    display: flex;
+    height: 80px;
+}
+.logonavbar{
+    height: 70px;
+}
+.navbar{
+    display: flex;
+    gap: 4.25rem;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.navbar a{
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.banner-principal{
+    width: 100%;
+    height: 20rem;
+    background-image: url(https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.banner-principal h1{
+    font-family: "Playfair Display", serif;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.banner-principal p{
+    margin-left: 5%;
+}
+.banner-secundario{
+    width: 100%;
+    height: 12rem;
+    background-image:url(https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center;
+    background-size: cover;
+}
+.tres-servicios button{
+    background-color: rgb(203, 155, 248);
+    color: aliceblue;
+    border: 0cap;
+    width: 170px;
+}
+.tres-servicios{
+    display:flex;
+    width: 100%;
+    margin:10%;
+    margin-top: 5%;
+    justify-content:center;
+}
+p{
+    font-family: "Bitter", serif;
+}
+.newsletter{
+    background-color: rgb(68, 16, 117);
+    display: grid;
+    width: 100%;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "titulo-guia titulo-guia"
+    "bajada-guia boton-guia"
+    ;
+}
+.newsletter h2{
+    color: aliceblue;
+    font-family: "Playfair Display", serif;
+    grid-area: titulo-guia;
+    margin-left: 15.625rem;
+}
+.newsletter p{
+    color: aliceblue;
+    grid-area: bajada-guia;
+    margin-left: 15.625rem;
+}
+.newsletter button{
+    background-color:aliceblue;
+    color:blueviolet;
+    padding: .3125rem;
+    border: 0cap;
+    width: 170px;
+    grid-area: boton-guia;
+    align-content: center;
+}
+.tres-servicios div h2{
+    color: blueviolet;
+    font-family: "Bitter", serif;
+    font-weight: 600;
+}
+.tres-servicios p{
+    text-align: justify;
+    width: 50%;
+    font-family: "Bitter", serif;
+}
+.bannerCopy{
+    background-image: url(https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image:linear-gradient(rgb 100) ;
+    font-family: "Playfair Display", serif;
+    margin-left: 3.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .625rem;
+    justify-content: center;
+}
+.banner-palabras{
+    height: 400px;
+    margin-right: 3.125rem;
+    font-family: "Playfair Display", serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "imagen descripcion"
+    "imagen boton"
+}
+.banner-palabras img{
+    height: 25rem;
+    grid-area: imagen;
+}
+.banner-palabras h2{
+    text-align: right;
+    justify-content: center;
+    padding-top: 3.125rem;
+    grid-area: descripcion;
+}
+.banner-palabras button{
+    background-color:aliceblue;
+    color:blueviolet;
+    width: 170px;
+    margin-left: 40%;
+    grid-area: boton;
+}
+.bannerBlog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+}
+.bannerBlog{
+    background-color: rgb(203, 155, 248);
+    font-family: "Playfair Display", serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    width: 100%;
+    height: 6.25rem;
+}
+.bannerBlog button{
+    background-color:aliceblue;
+    color:blueviolet;
+    border: 0cap;
+    width: 170px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.seis-cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: .625rem;
+    width: 100%;
+    margin:10%;
+    margin-top: 5%;
+    justify-content:center;
+}
+.seis-cursos button{
+    background-color: rgb(203, 155, 248);
+    color: aliceblue;
+    border: 0cap;
+    width: 170px;
+}
+.seis-cursos p{
+    text-align: justify;
+    width: 40%;
+    font-family: "Bitter", serif;
+}
+.seis-cursos div h2{
+    color: blueviolet;
+    font-family: "Bitter", serif;
+    font-weight: 600;
+}
+.btn{
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 0cap;
+}
+.btn-servicio{
+    border: 0cap;
+    background-color: rgb(255, 255, 255);
+}
+.quienes-somos h2{
+    margin-left: 12.5rem;
+    margin-top: 1.875rem;
+    color: blueviolet;
+    font-family: "Playfair Display", serif;
+}
+.quienes-somos p{
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    margin-top: 1.875rem;
+}
+.nosotros-ayuda{
+    margin-bottom: 1.875rem;
+    margin-left: 1.875rem;
+    display: flex;
+    width: 100%;
+    gap: 40%;
+}
+.nosotros-ayuda h2{
+    margin-left: 1.875rem;
+    font-family: "Playfair Display", serif;
+    align-content: center;
+}
+.tipo-correccion{
+    background-color: rgb(230, 214, 245);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+}
+.tipo-correccion h2{
+    color: blueviolet;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+.tipo-correccion p{
+    text-align: justify;
+    font-family: "Noto Serif", serif;
+}
+.tipo-correccion button{
+    background-color: rgb(203, 155, 248);
+    color: aliceblue;
+    border: 0cap;
+    width: 170px;
+}
+.formulario-contacto{
+    color: black;
+}
+.footer-contacto{
+    display: flex;
+    margin-top: .625rem;
+}
+.logo-footer{
+    height:90px
+}
+footer p{
+    font-family: "Bitter", serif;
+    padding-left: 10%;
+    margin: 1.25rem;
+}
+.redes-soc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.redes-soc img{
+    width: 30px;
+    height: 30px;
+}
+@media(max-width:768px){
+    .navbar{
+        width: 80%;
+        display: flex;
+        gap: .625rem;
+    }
+    .banner-principal{
+        width: 48rem;
+        margin-left: 0px;
+    }
+    .tres-servicios{
+        margin-left: .625rem;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .bannerCopy{
+        background-image: none;
+        margin-top: .625rem;
+        margin-bottom: .625rem;
+    }
+    .bannerCopy p{
+        display: flex;
+        justify-content: center;
+        margin-right: 1.25rem;
+    }
+    .tipo-correccion{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-left: 1.875rem;
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .bannerBlog{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacto img{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        height: 100px;
+        width:fit-content;
+    }
+    .quienes-somos h2{
+        margin-left: 1.875rem;
+    }
+    .quienes-somos p{
+        margin-left: 1.875rem;
+    }
+    .banner-secundario h1{
+        margin-left: 2.5rem;
+    }
+    .banner-secundario p{
+        margin-left: 2.5rem;
+    }
+}
+@media(max-width:320px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: 0;
+    }
+    .tres-servicios{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 1.875rem;
+        gap: 1.25rem
+    }
+    .newsletter{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 0px;
+    }
+    .newsletter p{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.25rem;
+        padding: 0px;
+        gap: 1.875rem;
+    }
+    .newsletter h2{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.25rem;
+        padding: 0px;
+        gap: 1.875rem;
+    }
+    .tipo-correccion{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 1.875rem;
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .quienes-somos p{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+        text-align: justify;
+    }
+}
